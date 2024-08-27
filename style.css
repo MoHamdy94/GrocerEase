@@ -21,9 +21,35 @@
 .card-two{
     background-color: #B8D9D0;
 }
-.card-img-top{
+/* .card-img-top{
   background-size: contain;
+} */
+
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
+
+.card-img-top {
+  flex-grow: 1;
+  object-fit: cover; /* Ensures the image covers the available space */
+  height: 260px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title, .card-text, .btn {
+  margin-bottom: 10px; /* Optional: Adds spacing between elements */
+}
+
+
+
 
 a{
   text-decoration: none !important ;
